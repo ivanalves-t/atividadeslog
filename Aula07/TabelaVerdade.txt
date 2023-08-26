@@ -1,0 +1,30 @@
+'''
+Construa a tabela-verdade para as seguintes expressões:
+(p and q) and not(p or q)
+not(p and not q) or q
+'''
+
+
+p and q
+
+p   q   p and q
+1   1       1
+1   0       0
+0   1       0
+0   0       0
+
+!(p or q)
+
+p   q   !(p or q)
+1   1       0
+1   0       0
+0   1       0
+0   0       1
+
+not(p and not q) or q
+
+p   !p   q  !q   not(p and not q)   not(p and not q) or q
+1    0   1   0      0                       1
+1    0   0   1      0                       0
+0    1   1   0      1                       1
+0    1   0   1      0                       0
