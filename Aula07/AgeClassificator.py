@@ -15,4 +15,5 @@ elif age >= 11 and age <=13:
      print('Juvenil A')
 elif age >= 14 and age <=17:
      print('Juvenil B')
-elif age > 18: print('Adulto')
+else:
+     print('Adulto')
