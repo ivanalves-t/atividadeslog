@@ -12,25 +12,19 @@ num = int(input('Digite um número menor que 1000 '))
 unidade = num % 10
 dezena = (num%100)//10
 centena = num //100
-plural = 's'
 
 if centena > 1:
-    print(centena,'centena'+plural)
+    print(centena,'centenas')
 elif centena == 1:
     print(centena,'centena')
-else:
-    print(end='')
     
 if dezena > 1:
-    print(dezena,'dezena'+plural)
+    print(dezena,'dezenas')
 elif dezena == 1:
     print(dezena,'dezena')
-else:
-    print(end='')
 
 if unidade > 1:
-    print(unidade,'unidade'+plural)
+    print(unidade,'unidades')
 elif unidade == 1:
     print(unidade,'unidade')
-else:
-    print(end='')
+

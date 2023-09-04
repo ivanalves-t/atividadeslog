@@ -12,4 +12,4 @@ while i <= num:
     fat *= i
     i += 1
 
-print(f'O fatorial de {num} é {fat}')
+print(f'O fatorial de {num}! é {fat}')

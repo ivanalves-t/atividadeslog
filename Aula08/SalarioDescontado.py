@@ -7,8 +7,8 @@ corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao
 usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
 '''
 
-payment = float(input('Digite o valor da hora trabalhada'))
-hour_worked = float(input('Digite a quantidade de horas trabalhadas por mês'))
+payment = float(input('Digite o valor da hora trabalhada '))
+hour_worked = float(input('Digite a quantidade de horas trabalhadas por mês '))
 payment_brute = payment * hour_worked*18.19
 
 
@@ -27,10 +27,12 @@ else:
 
 total_descontos = (payment_brute*sindicato)+(payment_brute*inss)+(payment_brute*desconto_ir)
 
-print(f'Salário bruto: R${payment_brute}')
-print(f'(-) IR  : R${payment_brute*desconto_ir}')
-print(f'(-) INS{inss*100}   : R${payment_brute*inss}')
-print(f'(-) Sindicato{sindicato*100}%)  : R${payment_brute*sindicato}')
-print(f'FGTS{fgts*100}% : R${payment_brute*fgts}')
-print(f'Total de descontos: R${total_descontos}')
-print(f'Salário Líquido : R${payment_brute-total_descontos}')
+print(f'''
+Salário bruto: R${payment_brute:.2f}
+(-) IR  : R${payment_brute*desconto_ir:.2f}
+(-) INS{inss*100}   : R${payment_brute*inss:.2f}
+(-) Sindicato {sindicato*100}%  : R${payment_brute*sindicato:.2f}
+FGTS {fgts*100}% : R${payment_brute*fgts:.2f}
+Total de descontos: R${total_descontos:.2f}
+Salário Líquido : R${payment_brute-total_descontos:.2f}
+''')
