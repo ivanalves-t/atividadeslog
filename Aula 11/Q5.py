@@ -14,6 +14,6 @@ for i in range(len(no_space)):
     palin += no_space[-i-1]
 
 if palin == no_space:
-    print(f'"{str1}" é igual escrito de trás pra frente. Logo, é palíndromo')
+    print(f'"{str1}" é igual escrito de trás pra frente, logo, é palíndromo')
 else:
     print('Não é palíndromo')

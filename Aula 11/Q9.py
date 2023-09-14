@@ -14,9 +14,10 @@ comp = ''
 for i in str1:
     for j in str2:
         if i == j:
-            comp += j
+            if i not in comp:
+                comp += j
 
 if comp == '':
-    print('POG LUL KEKW')
+    print('Caracteres não encontrados na primeira string')
 else:
-    print(comp)
+    print(str2)
