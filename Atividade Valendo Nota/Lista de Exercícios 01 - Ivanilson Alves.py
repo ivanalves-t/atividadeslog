@@ -297,3 +297,55 @@ n = int(input('Digite um número inteiro positivo '))
 for i in range(n+1):
     print(i)
 '''
+
+#Questão 24
+'''
+#Creio que seja de N até 0. Já que é ordem decrescente
+n = int(input('Digite um número Inteiro Positivo '))
+
+while n >= 0:
+    print(n)
+    n -= 1
+'''
+
+#Questão 25
+'''
+soma_par = 0
+produto_impar = 1
+
+num1 = int(input('Digite um número '))
+num2 = int(input('Digite outro número '))
+
+if num1 > num2:
+    num1, num2 = num2, num1
+
+for num1 in range(num1,num2+1):
+    if num1 %2 == 0:
+        soma_par += 1
+    else:
+        produto_impar *= num1       
+
+print(f'A soma dos números pares do intervalo é {soma_par}')
+print(f'A multiplicação dos ímpares do intervalo é {produto_impar}')
+'''
+
+#Questão 26
+'''
+for n1 in range(1,10):
+    print(f'Essa é a tabuada de {n1}:')
+    for n2 in range(1,10):
+        tabuada = n1 * n2
+        print(f'{n1} X {n2} = {tabuada}')
+'''
+
+#Questão 27
+'''
+num = int(input("Digite um número inteiro positivo "))
+
+floyd = 1
+for linha in range(1, num + 1):
+    for coluna in range(1, linha + 1):
+        print(floyd, end=" ")
+        floyd += 1
+    print()
+'''

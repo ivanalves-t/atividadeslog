@@ -5,6 +5,7 @@ digitação de um número até 99 e imprima-o na tela por extenso.
 str1 = input('Digite um número de 0 a 99 ')
 str2 = ''
 number_str = {
+'0' : 'zero',
 '1' : 'um',
 '2' : 'dois',
 '3' : 'três',
