@@ -6,14 +6,13 @@ ONIBUS é o exemplo de uma frase palíndroma onde os espaços foram ignorados. F
 palíndromo ou não.
 '''
 
-str1 = input('Digite uma palavra ')
+str1 = input('Digite uma palavra ').upper().replace(' ','').replace(',','').replace('.','')
 palin = ''
-no_space = str1.replace(' ','')
 
 for i in range(len(no_space)):
-    palin += no_space[-i-1]
+    palin += str1[-i-1]
 
-if palin == no_space:
+if palin == str1:
     print(f'"{str1}" é igual escrito de trás pra frente, logo, é palíndromo')
 else:
     print('Não é palíndromo')

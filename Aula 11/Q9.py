@@ -12,10 +12,8 @@ str2 = input('Segunda string ')
 comp = ''
 
 for i in str1:
-    for j in str2:
-        if i == j:
-            if i not in comp:
-                comp += j
+    if i in str2 and i not in comp:
+                comp += i
 
 if comp == '':
     print('Caracteres não encontrados na primeira string')

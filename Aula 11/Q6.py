@@ -6,7 +6,7 @@ principal.  Exemplo:
  Saída: TTAGACGTG
 '''
 
-dna = input('Digite uma fita de DNA ')
+dna = input('Digite uma fita de DNA ').upper()
 dna_t = ''
 
 for i in dna:
@@ -19,4 +19,4 @@ for i in dna:
     elif i == 'G':
         dna_t += 'C'
 
-print(dna_t)
+print(f'{dna_t}')

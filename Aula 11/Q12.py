@@ -30,6 +30,7 @@ number_str = {
 '40': 'quarenta',
 '50': 'cinquenta',
 '60': 'sessenta',
+'70': 'setenta',
 '80': 'oitenta',
 '90': 'noventa'
 }
