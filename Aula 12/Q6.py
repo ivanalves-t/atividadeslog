@@ -7,8 +7,7 @@ imprima a data com o mês escrito por extenso. Exemplo:
 '''
 
 birth_date = input('Digite a data do seu nascimento no formato dd/mm/aaaa ')
-month_int = ''
-extence = birth_date.split('/')
+extence = ''
 
 meses_ano = {
 '01' : 'Janeiro',
@@ -25,8 +24,7 @@ meses_ano = {
 '12' : 'Dezembro',
 }
 
-if month_int [1] in meses_ano:
-    extense = meses_ano[month_int[1]]
+if birth_date[3:5] in meses_ano:
+    extence = meses_ano[birth_date[3:5]]
 
-
-print(f'Você nasceu em {birth_date[0:2]} de {extense} de {birth_date[6:]}')
+print(f'Você nasceu em {birth_date[0:2]} de {extence} de {birth_date[6:]}')

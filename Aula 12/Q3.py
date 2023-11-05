@@ -15,8 +15,8 @@ for i in range(4):
 
 mid_height = sum(list_students_height)/4
 
-for j, k in zip(list_students_age,list_students_height):
-    if j > 13 and k < mid_height:
+for j in range(4)
+    if list_students_age[j] > 13 and list_students_height[j] < mid_height:
         midgets += 1
 
 if midgets == 0:
