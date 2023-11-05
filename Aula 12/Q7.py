@@ -3,9 +3,11 @@ armazene-as em uma lista. Após isto, calcule a média anual das temperaturas e
 mostre todas as temperaturas acima da média anual, e em que mês elas ocorreram
 (mostrar o mês por extenso: 1 - Janeiro, 2 - Fevereiro, . . . ).
 '''
+temp_above = []
+i = 1
+mid_month = 0
 temp_list = []
-above_temp_list = []
-meses_ano = {
+month_attrib = {
 '1' : 'Janeiro',
 '2' : 'Fevereiro',
 '3' : 'Março',
@@ -19,17 +21,16 @@ meses_ano = {
 '11' : 'Novembro',
 '12' : 'Dezembro',
 }
-for i in range(1,13):
-    month = input(f'Digite a temperatura do mês de {meses_ano[str(i)]}: ')
+
+while i < 13:
+    month = int(input(f'Digite a temperatura do mês de {month_attrib[str(i)]}: '))
+    mid_month += month
+    i += 1
     temp_list.append(month)
 
-mid_temp = sum(temp_list)/12
-for i in temp_list:
-    if i > mid_temp:
-        above_temp_list.append(meses_ano[str(i)])
-        above_temp_list.append(i)
+mid_month /= 12
 
-if above_temp_list == 0:
-    print('Não houve meses com temperatura acima da média')
-else:
-    print(f'Lista dos meses com temperatura acima da média: {above_temp_list}')
+for i,j in zip(temp_list,range(1,12)):
+    if i > mid_month:
+        print(f'{month_attrib[str(j)]}: {i} graus')
+        
